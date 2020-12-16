@@ -1,12 +1,9 @@
 from transformers import pipeline
 got = pipeline('text-generation', model='./gpt2-got', tokenizer='gpt2', config={'max_length':1000})
 
-<<<<<<< HEAD
 import logging
 logging.getLogger('transformers.tokenization_utils').setLevel(logging.ERROR)
 
-=======
->>>>>>> ee20c80... first commit
 loop = "Y"
 while loop == "Y":
     SOS = input('Input start of the sentence\n\t')
